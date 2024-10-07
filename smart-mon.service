@@ -1,0 +1,13 @@
+[Unit]
+Description=smart-mon
+After=influxd.service influxdb.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/smart-mon
+ExecStart=/opt/smart-mon/smart-mon.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

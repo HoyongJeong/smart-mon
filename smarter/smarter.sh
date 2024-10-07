@@ -1,0 +1,1 @@
+smarter.2.0.sh
